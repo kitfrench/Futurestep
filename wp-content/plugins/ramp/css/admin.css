@@ -1,0 +1,298 @@
+#cf .form-section {
+	padding: 0.5em 1em;
+	margin: 10px 0;
+	border: 1px solid #E3E3E3;
+	background-color: #F5F5F5;
+	-moz-border-radius: 3px; /* FF1+ */
+	-webkit-border-radius: 3px; /* Saf3+, Chrome */
+	-khtml-border-radius: 3px; /* Konqueror */
+	border-radius: 3px; /* Standard. IE9 */
+}
+#cf .form-section .cf-elm-block:hover {
+	background: none;
+}
+#cf .form-section p.submit {
+	padding-left: 20%;
+}
+
+#cf .cfd-loading {
+	height: 16px;
+	padding: 5px 0 5px 20px;
+	background: transparent url(../img/loading.gif) 0 6px no-repeat;
+}
+
+/* Batch tables */
+#cf tr.pending .send-item-status {
+	color: #FFD000;
+	font-weight: bold;	
+}
+#cf tr.sending .send-item-status {
+	padding-left: 25px;
+	background: #fff url(../img/loading.gif) 5px 50% no-repeat;
+	color: #E77700;
+	font-weight: bold;
+}
+#cf tr.sent .send-item-status {
+	color: green;
+	font-weight: bold;	
+}
+#cf tr.cancelled .send-item-status,
+#cf tr.error .send-item-status {
+	color: #E81300;
+	font-weight: bold;
+}
+#cf table td .item-type {
+	font-weight: bold;
+}
+#cf table.history th.batch-destination {
+	width: 200px;
+}
+#cf table.batch-items th.extras-messages {
+	width: 70%;
+}
+#cf .message {
+	margin: 1em 0;
+	padding: 5px 10px;
+	background-color: #EBEBEB;
+	border: 1px solid #DFDFDF;
+	-moz-border-radius: 3px; /* FF1+ */
+	-webkit-border-radius: 3px; /* Saf3+, Chrome */
+	-khtml-border-radius: 3px; /* Konqueror */
+	border-radius: 3px; /* Standard. IE9 */
+}
+#cf td .message {
+	margin: 5px 0;
+	padding: 4px 8px;
+}
+#cf .message.notice,
+#cf .message.success {
+	border-color: #E6DB55;
+	background-color: #FFFBCC;
+}
+#cf .message.warning,
+#cf .message.error,
+#cf .message.cfd-error {
+	background-color: #FFD6D6;
+	border-color: #E37676;
+}
+#cf .message h3,
+#cf .message h4 {
+	margin: 5px 0 0 0;
+	line-height: 1.2em;
+}
+#cf .message ul,
+#cf .message ol {
+	line-height: 1.2em;
+	list-style-type: disc;
+	margin: 0 0 4px 18px;
+}
+#cf .message ol li,
+#cf .message ul li {
+	margin: 4px 0 0 0;
+}
+#cf .message p {
+	margin: 5px 0;
+}
+
+#cfd_settings #cf_deploy_test_comms_results {
+	display: block;
+	float: right;
+	height: 24px;
+	overflow: hidden;
+	text-indent: -9999px;
+	width: 24px;
+}
+#cfd_settings #cf_deploy_test_comms_results.cfd-loading {
+	width: 0px;
+	height: 16px;
+}
+#cfd_settings #cf_deploy_test_comms_results.comms-ok {
+	background: transparent url(../img/comms-test-icons.png) 0 -24px no-repeat;
+}
+#cfd_settings #cf_deploy_test_comms_results.comms-fail {
+	background: transparent url(../img/comms-test-icons.png) 0 0 no-repeat;	
+}
+#cfd_settings #cf_deploy_test_comms_message {
+	margin: 8px 0 0 20%;
+	width: 69%;
+	display: block;
+}
+
+#cf .has-cb {
+	width: 25px;
+}
+#cf .has-cb input[type="checkbox"] {
+	margin: 0;
+}
+#cf td.has-cb input[type="checkbox"] {
+	margin-top: 2px;
+}
+#cf th.item-status,
+#cf th.item-action,
+#cf th.send-item-status,
+#cf th.send-item-type,
+#cf th.batch-author,
+#cf th.batch-date,
+#cf th.import-history-date,
+#cf th.import-history-source {
+	width: 18%;
+}
+#cf form .batch-delete {
+	float: right;
+}
+#cf .item-time,
+#cf .item-status-text {
+	color: gray;
+}
+#cf .item-trash {
+	color: #D51C1B;
+}
+#cf tr.item-selected {
+	background: #f5f5f5;
+}
+#cf .batch-screen-return {
+	float: right;
+}
+#cf dt {
+	font-weight: bold;
+	margin: 3px 0;
+}
+#cf dd {
+	margin-left: 20px;
+}
+#cf .cf-deploy-documentation ul {
+	list-style: disc outside;
+	padding-left: 15px;
+}
+
+/* notifications in tables */
+tr.cf-has-concerns td { /* row above notices */
+	border-bottom: 0;
+	padding-bottom: 0;
+}
+tr.cf-concerns td { /* row below item with notices */
+	border-top: 0;
+	padding-top: 0;
+}
+td .cf-notice,
+td .cf-error,
+td .cf-warning {
+	list-style-type: none;
+	margin: 0 0 5px 0;
+	padding: 3px 8px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+}
+td .cf-notice li,
+td .cf-error li,
+td .cf-warning li {
+	margin: 2px 0;
+}
+td .cf-notice {
+	background-color: #ffffe0;
+	border: 1px solid #e6db55;	
+}
+td .cf-warning {
+	background-color: #ffebe8;
+	border: 1px solid #c00;	
+}
+
+/** Footer - used for form actions/buttons
+ -------------------------------------------------- */
+.cf-footer {
+	margin: 1.5em 0;
+}
+
+/** Columns
+ -------------------------------------------------- */
+/* halves */
+body #cf .cf-col-2-1,
+body #cf .cf-col-2-2 {
+	width: 49%;
+}
+#cf .cf-col-2-1 {
+	margin-right: 2%;
+}
+
+/** Help Box
+ -------------------------------------------------- */
+#cf .cf-help-box {
+	float: left;
+	width: 40%;
+	max-width: 350px;
+	padding: 0 5% 30px 5%;
+}
+#cf .cf-help-box h3 {
+	font-size: 20px;
+}
+#cf .cf-help-box p,
+#cf .cf-help-box ul {
+	font-size: 14px;
+	line-height: 20px;
+}
+
+/** Rollback Button
+ -------------------------------------------------- */
+.cf-has-rollback {
+	background: #d6e5f4;
+}
+.cf-has-rollback .ramp-batch-name {
+	background: #eaf2fa url(../img/rollback-arrow.png) 100% 50% no-repeat;
+}
+.cf-rollback {
+	float: right;
+	height: 100%;
+	margin-top: auto;
+	margin-bottom: auto;
+	margin-left: 20px;
+	padding-top: 5px;
+	padding-right: 30px;
+	padding-left: 25px;
+}
+
+/** Big Screen Icon
+ -------------------------------------------------- */
+#icon-cf-ramp {
+	background: transparent url(../img/ramp-menu-icon-big.png) no-repeat;
+}
+
+/* Important message */
+
+#cf .important {
+	-moz-border-radius: 3px; /* FF1+ */
+	-webkit-border-radius: 3px; /* Saf3+, Chrome */
+	-khtml-border-radius: 3px; /* Konqueror */
+	border-radius: 3px; /* Standard. IE9 */
+	
+	background: #e9f1f8 url(../img/ramp-warning-background.png) no-repeat scroll center right;
+	border: #22759b solid 1px;
+	margin-top: 10px;
+	padding: 16px 340px 16px 16px;
+	position: relative;
+}
+#cf .important .title {
+	margin: 0 0 5px;
+}
+#cf .important p {
+	font-size: 12px;
+	margin: 0;
+}
+#cf .important p a {
+	text-decoration: none;
+}
+#cf .important p a:hover {
+	text-decoration: underline;
+}
+#cf .important a.button-primary {
+	display: inline-block;
+	margin-top: -10px;
+	position: absolute;
+	right: 61px;
+	top: 50%;
+	vertical-align: middle;
+}
+html.ie7 #cf .important a.button-primary {
+	zoom: 1;
+	display: inline;
+}

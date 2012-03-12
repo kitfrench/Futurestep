@@ -1,0 +1,222 @@
+.solutions {
+    min-height: 800px;
+    vertical-align: top;
+    margin-bottom: 50px;
+    background: transparent; /*#bde5f6;*/
+    /* Old browsers */
+    background: url('img/illustrations/bridge.png') 0px bottom no-repeat, -webkit-linear-gradient(top, #bde5f6 0, #fff 150px);
+    background: url('img/illustrations/bridge.png') 0px bottom no-repeat, -webkit-gradient(linear, left top, left bottom, color-stop(0, #bde5f6 0), color-stop(1, #fff 150px));
+    background: url('img/illustrations/bridge.png') 0px bottom no-repeat, -moz-linear-gradient(top, #bde5f6 0, #fff 150px);
+    background: url('img/illustrations/bridge.png') 0px bottom no-repeat, -o-linear-gradient(top, #bde5f6 0, #fff 150px);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr = '#bde5f6', endColorstr = '#ffffff');
+    background: url('img/illustrations/bridge.png') 0px bottom no-repeat, -webkit-linear-gradient(top, #bde5f6 0, #fff 150px);
+    /* W3C */
+
+}
+
+.solutions section.solution-detail {
+    width: 670px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.solutions section.solution-detail article {
+    display: inline-block;
+    width: 435px;
+    vertical-align: top;
+    padding-left: 5px;
+
+    font-size: 14px;
+    line-height: 18px;
+}
+
+.solutions section.solution-detail article p {
+    margin-bottom: 10px;
+}
+
+.solutions section.solution-detail article ul {
+    margin: 10px 0 10px 5px;
+}
+
+.solutions section.solution-detail article ul li {
+    list-style: disc;
+    padding-left: 0px;
+    margin-left: 20px;
+}
+
+.solutions section.solution-detail h1 {
+    margin-left: 0;
+}
+
+.solutions section.solution-detail h2,
+.solutions aside h1 {
+    font-family: LexiaBold, Georgia, sans-serif;
+    font-size: 12px;
+    text-transform: uppercase;
+
+}
+
+.solutions section.solution-detail section {
+    display: inline-block;
+    width: 205px;
+    vertical-align: top;
+    margin-left: 15px;
+}
+
+.solutions .solutions-related-content.summaries {
+    width: 175px;
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 10px;
+}
+
+.solutions .solutions-related-content.summaries aside:first-child,
+.solutions section.solution-detail .solutions-expertise,
+.solutions aside.solutions-more-info {
+    border-bottom: solid 2px #e5e7e7;
+    padding-bottom: 20px;
+}
+
+.solutions .solutions-related-content.summaries aside:last-child {
+    border-bottom: solid 0px #e5e7e7;
+    padding-bottom: 20px;
+}
+
+.solutions section.solution-detail .solutions-expertise time {
+    font-size: 12px;
+    line-height: 18px;
+    color: #444;
+}
+
+.solutions section.solution-detail .solutions-expertise h1 {
+    text-indent: 5px;
+}
+
+.solutions-expertise blockquote {
+    font-size: 16px;
+    line-height: 21px;
+    font-family: LexiaBold, Georgia, sans-serif;
+    font-style: italic;
+    color: #5a94b7;
+    margin-bottom: 10px;
+}
+
+.solutions-expertise p,
+.solutions section.solution-detail .solutions-experience p {
+    font-family: Arial, Helvetica, serif;
+    font-weight: bold;
+    color: #e27134;
+}
+
+.solutions section.solution-detail .solutions-experience {
+    margin-top: 15px;
+}
+
+.solutions-related-content .latest-news {
+    font-family: Arial
+}
+
+.solutions-related-content a {
+    color: #000;
+    display: block;
+}
+
+.solutions-related-content .latest-news a.featured-event {
+    font-weight: Bold;
+    text-decoration: none;
+    font-size: 15px;
+    line-height: 19px;
+    display: block;
+    color: #e27134;
+}
+
+.solutions-related-content .latest-news time {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.solutions-key-downloads {
+    margin-top: 10px;
+}
+
+.solutions-key-downloads ul li {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.solutions-key-downloads ul li a {
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.solutions-key-downloads ul li a:hover {
+    text-decoration: underline;
+}
+
+.solutions-index {
+    margin-bottom: 15px;
+}
+
+.solutions-index a {
+    font-family: LexiaRegular, Georgia, serif;
+    font-size: 14px;
+    line-height: 20px;
+    color: #596a74;
+    display: inline-block;
+}
+
+.solutions-index ul li {
+    display: inline-block;
+    padding: 0 10px 0 0px;
+    padding-bottom: 0px;
+
+}
+
+.solutions-index ul li:after {
+    padding-left: 10px;
+    content: "|";
+    color: #596A74;
+}
+
+.solutions-index ul li:last-child:after {
+    content: "";
+}
+
+.solutions-index ul li.current a {
+    color: #444;
+    border-bottom: 2px solid transparent;
+}
+
+.solutions-index ul li.current a,
+.solutions-index ul li a:hover {
+    border-bottom: 2px solid #f6a749;
+}
+
+.solutions-related-links p {
+    margin-bottom: 20px;
+    font-size: 15px;
+    line-height: 19px;
+}
+
+.solutions-related-links p a {
+    text-decoration: none;
+    color: #e27134;
+    font-size: 14px;
+    font-family: Arial, Helvetica, serif;
+    font-weight: bold;
+}
+
+.solutions-related-links p a:hover {
+    text-decoration: underline;
+}
+
+.solutions-related-links .source {
+    color: #444;
+    font-size: 12px;
+    font-family: Arial, Helvetica, serif;
+}
+
+.summaries select {
+    width: 95%;
+    margin-bottom: 10px;
+}

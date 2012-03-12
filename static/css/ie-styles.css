@@ -1,0 +1,143 @@
+/*
+    IE only styles
+*/
+
+header nav.primary li.candidates a{
+    width:100px;
+    behavior: url(/css/PIE/PIE.htc);
+}
+
+
+a.continue{
+    position: relative;
+    z-index: 10000;
+    behavior: url(/css/PIE/PIE.htc);
+}
+
+.button,
+input[type="button"] {
+    /*filter: progid:DXImageTransform.Microsoft.gradient(startColorStr=#f6a23e, EndColorStr=#d4801b);*/
+
+    zoom: 1;
+    *display: inline;
+
+    position: relative;
+    z-index: 10000;
+    behavior: url(/css/PIE/PIE.htc);
+
+}
+
+.content{
+    position: relative;
+}
+
+.core-content .summaries {
+    width: 27%;
+}
+
+header.global nav.supplementary li,
+header nav.primary ul li,
+header nav.primary ul li a,
+footer nav ul.supplementary li,
+footer nav ul.social-media li,
+#carousel ul.index li,
+header #services-navigation .sector-services,
+.core-content .detail,
+.core-content .related-content,
+.core-content .detail .body ul.leadership-team .member img,
+.core-content .detail .body ul.leadership-team .member p,
+.core-content .detail .events-for-month,
+.core-content .detail .calendar .months .current-month,
+.core-content .index li,
+#carousel ul.headlines li.hero,
+footer nav ul,
+.jobs-slider ul.index li,
+.jobs-slider .jobs .job,
+footer nav .company-logos,
+.core-content .client-list li,
+.core-content .detail ul.experts .member a,
+.core-content .detail ul.experts .member p,
+header .rss-link,
+header .rss-link .rss-logo
+{
+    zoom: 1;
+    *display: inline;
+}
+
+
+.core-content .detail{
+    width:63%;
+    position: relative;
+    behavior: url(/css/PIE/PIE.htc);
+}
+
+
+.about-us-container .detail,
+.events-calendar-container .detail{
+    width:70%;
+    position: relative;
+    behavior: url(/css/PIE/PIE.htc);
+}
+
+
+.core-content-container {
+    background: transparent;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr = '#5fbde5f6', endColorstr = '#ffffff');
+    background: linear-gradient(top, rgba(189, 229, 246, 0.75) 0, #fff 150px);
+
+    position: relative;
+    behavior: url(/css/PIE/PIE.htc);
+
+}
+
+/* summaries represents a column of brief content */
+.core-content .summaries {
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr = '#f0faff', endColorstr = '#ffffff');
+    /*background: linear-gradient(top, #bde5f6 0, #fff 150px);*/
+
+    zoom: 1;
+    *display: inline;
+}
+
+header.global,
+.introduction{
+    position: relative;
+    z-index:1000;
+}
+
+header.global nav.supplementary li a{
+    text-decoration: none;
+    padding-right:10px;
+    zoom: 1;
+    *display: inline;
+}
+
+.introduction {
+    z-index: 1;
+}
+
+.introduction .headline{
+    z-index: 10;
+}
+
+.divider{
+    padding: 0 0;
+    margin:  0 0;
+}
+
+header.global nav.supplementary li a:hover{
+    text-decoration: underline;
+}
+
+header #services-navigation,
+.core-content .detail .body .expert-profile .vcard img{
+/* For IE 8 */
+-ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=1, Direction=135, Color='#666666')";
+/* For IE 5.5 - 7 */
+filter: progid:DXImageTransform.Microsoft.Shadow(Strength=1, Direction=135, Color='#666666');
+}
+
+.content .core-content  .only-child,
+.content .core-content .features .only-child{
+    border-bottom:1px none red; 
+}

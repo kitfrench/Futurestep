@@ -1,0 +1,705 @@
+/*  
+
+*/
+/* Typography  ==== ==== ==== ==== ==== ==== ==== ==== ==== ==== ==== ==== ==== ==== */
+
+body, h1, h2, h3, input, header a, footer a, .message p, .message a, a.more-info {
+    font-family: LexiaRegular, Georgia, serif;
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: normal;
+    }
+
+p, a, li, time, aside h2, #latest-news time, #global-network .world-map p, #services-navigation .sector-services a {
+    font-family: Arial, Helvetica, serif
+    }
+
+aside h1, a.more-info{
+    font-family: LexiaBold, Georgia, serif
+    }
+
+a:hover {
+    text-decoration: none
+    }
+
+nav a {
+    text-decoration: none;
+    font-size: 17px;
+    line-height: 23px
+    }
+
+#services-navigation .sector-services h1 {
+    font-size: 13px;
+    line-height: 18px;
+    text-transform: uppercase
+    }
+
+#services-navigation .sector-services a {
+    font-size: 13px;
+    line-height: 16px
+    }
+
+#services-navigation .sector-services a:hover {
+    text-decoration: underline
+    }
+
+aside h1 {
+    font-size: 11px;
+    text-transform: uppercase;
+    font-weight: normal
+    }
+
+.universal a, footer #at-a-glance-details a.more-info, #latest-news time {
+    font-size: 12px
+    }
+
+aside h2, input.button, input.button, a.more-info {
+    font-size: 14px
+    }
+
+input.button {
+    line-height: 20px
+    }
+
+.universal a {
+    line-height: 23px;
+    text-decoration: none
+    }
+
+footer .universal a {
+    font-size: 13px;
+    line-height: 26px
+    }
+
+footer #at-a-glance-details h1 {
+    text-transform: none;
+    font-size: 13px;
+    line-height: 18px
+    }
+
+footer #at-a-glance-details a.more-info {
+    line-height: 14px
+    }
+
+#introduction p {
+    font-size: 26px;
+    line-height: 28px
+    }
+
+#introduction a {
+    font-size: 15px;
+    line-height: 31px
+    }
+
+#latest-news time {
+    line-height: 18px
+    }
+
+#global-network .world-map p {
+    font-size: 16px;
+    line-height: 21px
+    }
+
+#jobs-with-clients .job .sector {
+    font-weight: bold
+    }
+
+a.more-info {
+    line-height: 28px;
+    text-decoration: none
+    }
+
+footer ul.universal li a:hover {
+    text-decoration: underline
+    }
+
+/* Layout and decoration ==== ==== ==== ==== ==== ==== ==== ==== ==== ==== ==== ==== ==== ==== */
+/* Common element level styles across all pages --> */
+body {
+    text-align: center
+    }
+
+ul li {
+    list-style: none
+    }
+
+/* Common class level styles across all pages --> */
+.content {
+    /* total width 900px */
+    margin: 0 auto 0 auto;
+    text-align: left;
+    width: 1000px;
+    position: relative
+    }
+
+.actions {
+    display: block;
+    text-align: right;
+    padding: 0 20px;
+    position: relative
+    }
+
+/*.content>header{*/
+#global-header {
+    margin: 18px 35px 0 35px;
+    position: relative
+    }
+
+.content header .universal {
+    position: absolute;
+    right: 10px;
+    top: 0;
+    text-align: right;
+    width: 200px;
+    padding-right: 10px
+    }
+
+.content header .universal p {
+    margin: 5px;
+    vertical-align: middle
+    }
+
+header .universal label {
+    margin: 0;
+    padding: 0;
+    display: inline
+    }
+
+header .universal select {
+    margin: 0;
+    padding: 0;
+    display: inline;
+    min-width: 120px
+    }
+
+header .universal > p a {
+    display: inline
+    }
+
+/*.content>header nav{*/
+#global-header nav {
+    position:relative;
+    margin-top: 20px;
+    padding: 0 0 0 25px
+    }
+
+.content > footer {
+    padding: 20px 0 30px 30px;
+    clear: both;
+    position: relative
+    }
+
+.content footer #at-a-glance-details aside {
+    width: 200px;
+    margin: 0 20px 0 0
+    }
+
+.content footer #at-a-glance-details p {
+    margin-bottom: 10px
+    }
+
+.content footer #at-a-glance-details a.more-info {
+    display: inline;
+    padding: 5px 10px;
+    min-width: 100px
+    }
+
+.content footer #at-a-glance-details a.more-info:after {
+    content: "    >"
+    }
+
+.content footer #at-a-glance-details aside h1 {
+    margin-bottom: 3px
+    }
+
+.content footer ul.universal li {
+    display: inline-block;
+    min-width: 70px;
+    text-align: center;
+    padding: 0 10px;
+    
+    zoom:1;
+    *display:inline;
+    }
+
+.content footer ul.universal {
+    display: inline-block;
+    width: 600px;
+    
+    zoom:1;
+    *display:inline;
+    }
+
+.content footer ul.social-media {
+    display: inline-block;
+    min-width: 200px;
+    min-height: 30px;
+    position: absolute;
+    right: 30px;
+    text-align: right;
+    
+    zoom:1;
+    *display:inline;
+    }
+
+.content footer ul.social-media li{
+   display:inline-block;
+    
+    zoom:1;
+    *display:inline;
+}
+
+.content footer ul.social-media a {
+    display: block;
+    width: 30px;
+    height: 30px;
+    background: transparent url(img/social-media.png) no-repeat;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
+    filter: alpha(opacity=70);
+    opacity: 0.7
+    }
+
+.content footer ul.social-media a:hover {
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    filter: alpha(opacity=100);
+    opacity: 1
+    }
+
+.content footer ul.social-media a span {
+    display: none
+    }
+
+.content footer ul.social-media a.youtube {
+    background-position: -39px 0
+    }
+
+.content footer ul.social-media a.linkedin {
+    background-position: -80px 0
+    }
+
+/*.content>header hgroup{*/
+#global-header hgroup {
+    width: 242px;
+    height: 57px;
+    background: url(img/Futurestep_Logo.png);
+    margin-left: 25px
+    }
+
+/*.content>header h1, */
+/*.content>header h2 {*/
+#global-header h1, #global-header h2 {
+    display: none
+    }
+
+#global-header nav ul li, #global-header ul li {
+    display: inline-block;
+    
+    zoom:1;
+    *display:inline;
+    }
+
+#global-header nav ul li {
+    margin: 0 30px 0 0
+    }
+
+#global-header nav ul li a {
+    display: inline-block;
+    padding: 3px 3px 4px 3px;
+    
+    zoom:1;
+    *display:inline;
+    }
+
+#global-header nav ul li a:hover {
+    padding: 0 3px 1px 3px;
+    border-bottom: 3px solid rgb(255, 131, 20)
+    }
+
+#services-navigation .sector-services a, #services-navigation .sector-services a:hover, #services-navigation .sector-services a:active {
+    padding: 0 3px 3px 3px;
+    border-bottom: 0 none transparent
+    }
+
+#global-header nav ul li a:active {
+    padding: 0 3px 1px 3px;
+    border-bottom: 3px solid #000
+    }
+
+#global-header #services-navigation {
+    position: absolute;
+    padding: 15px 0 10px 30px;
+    z-index: 10;
+    margin: 11px 0 0 0;
+    background: #e4e7e9;
+    filter: alpha(opacity=90);
+    opacity: 0.9;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=90)";
+    
+    }
+
+#global-header nav .right-arrow,
+#global-header nav .down-arrow{
+    top:9px;
+    left:98px;
+}
+
+#services-navigation .sector-services {
+    display: inline-block;
+    vertical-align: top;
+    width: 200px;
+    
+    zoom:1;
+    *display:inline;
+    }
+
+#services-navigation .sector-services h1 {
+    display: block
+    }
+
+#services-navigation .sector-services ul {
+    margin-top: 7px
+    }
+
+#services-navigation .sector-services ul li {
+    display: block
+    }
+
+/*  */
+.content>section {
+    padding: 10px 30px;
+    }
+
+.content #summaries,
+.content .clients {
+    min-height: 600px;
+    vertical-align:top;
+    
+    background: transparent;/*#bde5f6;*/
+    /* Old browsers */
+    background: -webkit-linear-gradient(top, #bde5f6 0, #fff 150px);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #bde5f6 0), color-stop(1, #fff 150px));
+    background: -moz-linear-gradient(top, #bde5f6 0, #fff 150px);
+    background: -o-linear-gradient(top, #bde5f6 0, #fff 150px);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#bde5f6', endColorstr='#ffffff');
+    background: linear-gradient(top, #bde5f6 0, #fff 150px);
+    /* W3C */
+    
+    }
+
+.content section aside {
+    text-align: left;
+    display: inline-block;
+    width: 270px;
+    padding: 15px;
+    vertical-align: top;
+    min-height: 200px;
+    border-radius: 5px;
+    background: #fff;
+    /* Old browsers */
+    background: linear-gradient(top, #e7f5fc 0%, #fff 100px);
+    /* Chrome10 ,Safari5.1  */
+    background: -webkit-linear-gradient(top, #e7f5fc 0%, #fff 100px);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #e7f5fc 0%), color-stop(1, #fff 100px));
+    background: -moz-linear-gradient(top, #e7f5fc 0%, #fff 100px);
+    background: -o-linear-gradient(top, #e7f5fc 0%, #fff 100px);
+    background: linear-gradient(top, #e7f5fc 0%, #fff 100px);
+    /* W3C */
+    
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    
+    
+    zoom:1;
+    *display:inline;
+    top: expression(this.offsetHeight-688);
+    }
+
+.content aside h1, .content aside h2 {
+    margin: 4px 0 10px
+    }
+
+.content aside p {
+    vertical-align: top
+    }
+
+.content aside p:after, 
+#global-network form:after {
+    content: ".";
+    display: block;
+    clear: both;
+    height: 0;
+    visibility: hidden
+    }
+
+.content .more-detail:before {
+    content: ">   "
+    }
+
+.content label span {
+    display: none
+    }
+
+input.button {
+    display: inline-block;
+    width: auto;
+    /*min-width: 120px;*/
+    padding: 3px 20px;
+    background-color: #f6a23e;
+    border: solid 1px #c5c3bb;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    background-image: -webkit-gradient(linear, center top, center bottom, from(#f6a23e), to(#d4801b));
+    background-image: -webkit-linear-gradient(top, #f6a23e, #d4801b);
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #f6a23e), color-stop(1, #d4801b));
+    background-image: -moz-linear-gradient(top, #f6a23e, #d4801b);
+    background-image: -o-linear-gradient(top, #f6a23e, #d4801b);
+    filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr=#f6a23e, EndColorStr=#d4801b)";
+    background-image: linear-gradient(top, #f6a23e, #d4801b);
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    
+    zoom:1;
+    *display:inline;
+    }
+
+.content input.button:active {
+    border: solid 0px #fff
+    }
+
+a.more-info {
+    display: block;
+    border: solid 1px rgb(209, 213, 215);
+    text-align: center;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    -webkit-box-shadow: 1px 0 0 #ff8314;
+    -moz-box-shadow: 1px 0 0 #ff8314;
+    box-shadow: 1px 0 0 #ff8314;
+    }
+
+a.more-info:hover {
+    -webkit-box-shadow: 1px 0 2px #ff8314;
+    -moz-box-shadow: 1px 0 2px #ff8314;
+    box-shadow: 1px 0 2px #ff8314
+    }
+
+a.more-info:active {
+    /*border: solid 1px rgb(73,86,94);*/
+    -webkit-box-shadow: 0 0 0 #ff8314;
+    -moz-box-shadow: 0 0 0 #ff8314;
+    box-shadow: 0 0 0 #ff8314
+    }
+
+a.opportunities {
+    position: relative;
+    margin-top:20px;
+    /*left: 300px;*/
+    /*width: 200px;*/
+    /**left:0;*/
+    }
+
+/* homepage */
+/* homepage>Carousel */
+#introduction {
+    padding: 0;
+    width: 1000px;
+    height: 378px;
+    background: #fff url(img/illustrations/carousel/tree.png)
+    }
+
+#introduction .message {
+    width: 400px;
+    margin: 0 0 0 35px;
+    max-height: 300px;
+    overflow: hidden;
+    display: block;
+    /* TODO: Consideration for CMS */
+    padding-top: 70px;
+    padding-left: 20px
+    }
+
+#introduction .message p {
+    height: auto;
+    margin-top: 10px
+    }
+
+/* homepage> summaries */
+#summaries aside a {
+    display: block
+    }
+
+/* homepage> asides */
+#latest-news {
+    margin: 0 15px
+    }
+
+#latest-news h2 {
+    margin: 0;
+    padding: 0
+    }
+
+#latest-news time {
+    display: block;
+    margin-bottom: 10px;
+    }
+
+#latest-insights p img {
+    padding: 0 10px 10px 0;
+    float: left
+    }
+
+aside#jobs-with-clients {
+    width: 585px;
+    background: #fff;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    border-top: solid 1px #ccc;
+    height: auto;
+    }
+
+#jobs-with-clients ul li:nth-child(odd) {
+    margin-right: 40px
+    }
+
+#jobs-with-clients ul li {
+    display: inline-block;
+    width: 270px;
+    min-height: 45px;
+    vertical-align: top;
+    margin-bottom: 10px;
+    
+    zoom:1;
+    *display:inline;
+    }
+
+#jobs-with-clients .job .sector, #jobs-with-clients .job .title {
+    display: block
+    }
+
+#global-network {
+    vertical-align: top;
+    float: right;
+    
+    position:relative;
+    }
+
+#global-network select {
+    width: 75%;
+    display: block;
+    margin-bottom: 10px
+    }
+
+#global-network .world-map {
+    margin-bottom: 30px
+    }
+
+/* decorations */
+.decoration{
+    margin: 0;
+    padding: 0;
+    display:block;
+    position: absolute;  
+    background: transparent url('img/web-sprites1.png') no-repeat;
+    -webkit-background-clip: border-box;
+    -moz-background-clip: border-box;
+    background-clip: border-box;
+
+    overflow: hidden;    
+}
+
+.connector-up{
+    width:28px;
+    height:15px;
+    top:-9px;
+    left:60px;
+    
+    background-position: 0px -65px;/*#e4e7e9*/
+}
+
+.down-arrow{
+    width:15px;
+    height:15px;
+    
+    background-position: 0px 0px;/*#e4e7e9*/
+}
+
+.right-arrow{
+    width:15px;
+    height:15px;
+    
+    background-position: -12px 0px;/*#e4e7e9*/
+}
+
+/* Background and text colors ==== ==== ==== ==== ==== ==== ==== ==== ==== ==== ==== ==== ==== ==== */
+/*  
+
+Palette:
+
+*/
+body {
+    color: rgb(68, 68, 68)
+    }
+
+/*.content>header nav{*/
+#global-header nav {
+    background: rgb(241, 242, 243)
+    }
+
+.universal a, #global-header nav a {
+    /*.content>header nav a{*/
+    color: rgb(73, 86, 94)
+    }
+
+#services-navigation a {
+    color: rgb(68, 68, 68)
+    }
+
+#services-navigation h1 {
+    color: rgb(102, 102, 102)
+    }
+
+#homepage aside h1, .more-detail {
+    color: rgb(68, 68, 68)
+    }
+
+a, #homepage aside h2 {
+    color: rgb(255, 131, 20)
+    }
+
+header a, footer a {
+    color: #444
+    }
+
+footer p {
+    color: #666
+    }
+
+.strap-line {
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+    filter: alpha(opacity=50);
+    opacity: 0.5
+    }
+
+.environment {
+    color: rgb(80, 175, 70)
+    }
+
+.content > footer {
+    background: rgb(241, 242, 243)
+    }
+
+.content input.button, input[type="button"] {
+    color: rgb(255, 255, 255)
+    }
+
+a.more-info {
+    color: rgb(73, 86, 94);
+    background: rgb(237, 242, 247)
+    }
+
+.content footer #at-a-glance-details aside {
+    background: transparent
+    }

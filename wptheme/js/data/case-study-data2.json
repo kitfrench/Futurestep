@@ -1,0 +1,170 @@
+{
+  "location":[
+    {
+      "id"    : "usa",
+      "title" : "North America"
+    }
+    ,{
+      "id" : "amer",
+      "title" : "South America"
+    }
+    ,{
+      "id" : "emea",
+      "title" : "Europe, Middle East &amp; Africa"
+    }
+    ,{
+      "id" : "apac",
+      "title" : "Asia Pacific"
+    }          
+  ],
+  
+  "sector":[
+    {
+      "title" : "Consumer Retail",
+      "id" : "crt"
+    },
+    {
+      "title" : "Technology",
+      "id" : "tec"
+    },
+    {
+      "title" : "Financial service",
+      "id" : "fsv"
+    },
+    {
+      "title" : "Healthcare / Life Sciences",
+      "id" : "hls"
+    },
+    {
+      "title" : "Industrial",
+      "id" : "ind"
+    }                     
+  ],
+
+  "service":[
+    {
+      "title" : "RPO",
+      "id" : "rpo"
+    },
+    {
+      "title" : "Recruitment Projects",
+      "id" : "rpj"
+    },
+    {
+      "title" : "Simple Search",
+      "id" : "ssc"
+    },
+    {
+      "title" : "Diagnostic",
+      "id" : "dia"
+    },
+    {
+      "title" : "Workspace Planning",
+      "id" : "wpl"
+    },
+    {
+      "title" : "Employer Branding",
+      "id" : "ebr"
+    },
+    {
+      "title" : "Assessment and Selection",
+      "id" : "aas"
+    },
+    {
+      "title" : "Technology",
+      "id" : "tch"
+    }                                                                      
+  ],  
+  
+  "client":
+  [     
+    {
+      "id" : "adi",
+      "title" : "adidas",
+      "image" : "img/logos/adiddaslogo.jpg",
+      "location" :"usa",
+      "sector" : ["crt"],
+      "service" : ["aas", "dia", "tec", "rpj"]
+    }
+    ,{
+      "id" : "apl",
+      "title" : "Apple inc.",
+      "image" : "img/logos/applelogo.jpg",
+      "location" :"usa",
+      "sector" : ["crt", "tec"],
+      "service" : ["tch","rpj"]
+    }
+    ,{
+      "id" : "att",
+      "title" : "AT &amp; T inc.",
+      "image" : "img/logos/atandtlogo.jpg",
+      "location" :"usa",
+      "sector" : ["tec"],
+      "service" : ["rpj"]
+    }   
+    ,{
+      "id" : "brp",
+      "title" : "BP",
+      "image" : "img/logos/bp_logo.jpg",
+      "location" :"emea",
+      "sector" : ["tec"],
+      "service" : ["rpj"]
+    },
+    ,{
+      "id" : "brk",
+      "title" : "Burger King",
+      "image" : "img/logos/bp_logo.jpg",
+      "location" :"usa",
+      "sector" : ["tec"],
+      "service" : ["rpj"]
+    }
+    ,{
+      "id" : "cit",
+      "title" : "Citigroup",
+      "image" : "img/logos/citigrouplogo.jpg",
+      "location" :"usa",
+      "sector" : ["fsv"],
+      "service" : ["rpj", "rpo"]
+    }
+    ,{
+      "id" : "ccg",
+      "title" : "Coca Cola",
+      "image" : "img/logos/cocacola.jpg",
+      "location" :"usa",
+      "sector" : ["crt"],
+      "service" : ["rpj", "aas"]
+    }                    
+    ,{
+      "id" : "dom",
+      "title" : "Dominos Pizza",
+      "image" : "img/logos/dominos-pizza-logo-design.jpg",
+      "location" :"usa",
+      "sector" : ["crt"],
+      "service" : ["rpj", "tch", "aas"]
+    }      
+    ,{
+      "id" : "eba",
+      "title" : "Ebay",
+      "image" : "img/logos/ebaylogo.jpg",
+      "location" :"usa",
+      "sector" : ["tec"],
+      "service" : ["rpj", "tch"]
+    }          
+    ,{
+      "id" : "fdx",
+      "title" : "Fedex",
+      "image" : "img/logos/fedexlogo.jpg",
+      "location" :"usa",
+      "sector" : ["hls"],
+      "service" : ["wpl", "tch", "rpj"]
+    }    
+    ,{
+      "id" : "frd",
+      "title" : "Ford",
+      "image" : "img/logos/fordlogo.jpg",
+      "location" :"usa",
+      "sector" : ["ind"],
+      "service" : ["wpl", "rpj"]
+    }    
+  ]
+}

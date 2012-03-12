@@ -1,0 +1,5 @@
+[05-Oct-2011 16:03:54] PHP Fatal error:  Call to undefined function get_header() in /home/rinntech/public_html/futurestep/static/home.php on line 7
+[05-Oct-2011 16:04:37] PHP Fatal error:  Call to undefined function get_header() in /home/rinntech/public_html/futurestep/static/home.php on line 7
+[05-Oct-2011 16:04:38] PHP Fatal error:  Call to undefined function get_header() in /home/rinntech/public_html/futurestep/static/home.php on line 7
+[10-Oct-2011 10:14:54] PHP Fatal error:  Call to undefined function get_header() in /home/rinntech/public_html/futurestep/static/index.php on line 2
+[11-Oct-2011 18:13:33] PHP Fatal error:  Call to undefined function get_header() in /home/rinntech/public_html/futurestep/static/404.php on line 1

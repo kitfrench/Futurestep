@@ -1,0 +1,10 @@
+#cf .cf-deploy-sample-post {
+	width: 100%;
+	height: 500px;
+	margin: 0 0 1.5em 0;
+}
+
+#cf pre,
+#cf .cf-deploy-sample-post {
+	font: 10px/1.1 menlo, monaco, courier, sans-serif;	
+}

@@ -1,0 +1,221 @@
+/*
+    IE only styles
+*/
+
+header nav.primary li.candidates a{
+    width:100px;
+    behavior: url(/wp-content/themes/futurestep/css/PIE/PIE.htc);
+}
+
+
+a.continue{
+    position: relative;
+    z-index: 10000;
+    behavior: url(/wp-content/themes/futurestep/css/PIE/PIE.htc);
+}
+
+.button,
+input[type="button"] {
+    zoom: 1;
+    *display: inline;
+
+    position: relative;
+    z-index: 10000;
+    behavior: url(/wp-content/themes/futurestep/css/PIE/PIE.htc);
+    background: #fff;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f6a23e', endColorstr='#d4801b');
+}
+
+.content{
+    position: relative;
+}
+
+.core-content{
+    position: relative;
+}
+
+header.global nav.supplementary li,
+header nav.primary ul li,
+header nav.primary ul li a,
+footer nav ul.supplementary li,
+footer nav ul.social-media li,
+#carousel ul.index li,
+header #services-navigation .sector-services,
+.core-content .detail,
+.core-content .related-content,
+.core-content .detail .body ul.leadership-team .member img,
+.core-content .detail .body ul.leadership-team .member p,
+.core-content .detail .events-for-month,
+.core-content .detail .calendar .months .current-month,
+.core-content .index li,
+#carousel ul.headlines li.hero,
+#carousel .index,
+footer nav ul,
+.jobs-slider ul.slider-index,
+.jobs-slider ul.slider-index li,
+.jobs-slider .jobs .job,
+footer nav .company-logos,
+.core-content .client-list li,
+.core-content .detail ul.experts li,
+.core-content .detail ul.experts .member a,
+.core-content .detail ul.experts .member p,
+header .rss-link,
+header .rss-link .rss-logo,
+.core-content .detail .events-for-month ul.chronological li p,
+#carousel .index-container a.nextprev,
+#carousel .index-container a.next,
+#carousel .index-container a.prev,
+#carousel .index-container .index
+{
+    zoom: 1;
+    *display: inline;
+}
+
+
+.core-content .detail{
+    width:63%;
+    position: relative;
+    behavior: url(/wp-content/themes/futurestep/css/PIE/PIE.htc);
+}
+
+
+.about-us-container .detail,
+.events-calendar-container .detail{
+    width:70%;
+    position: relative;
+    behavior: url(/wp-content/themes/futurestep/css/PIE/PIE.htc);
+}
+
+.core-content .detail .calendar .days-in-month tr:last-child td:first-child,
+ .core-content .detail .calendar .days-in-month tr:last-child td:last-child{
+    -moz-border-radius: 0 0 5px 0;
+    border-radius: 0 0 5px 0;
+    behavior: url(/wp-content/themes/futurestep/css/PIE/PIE.htc);
+}
+
+.events-calendar-container .detail .calendar,
+.events-calendar-container .detail .calendar table,
+.events-calendar-container .detail .calendar table td,
+{
+    behavior: url(/wp-content/themes/futurestep/css/PIE/PIE.htc);
+}
+
+.core-content-container {
+    position: relative;
+    background: transparent;
+    position: relative;
+    behavior: url(/wp-content/themes/futurestep/css/PIE/PIE.htc);
+    background: url('img/background-gradient.png') repeat-x;
+
+}
+
+/* summaries represents a column of brief content */
+.core-content .summaries {
+    width: 29%;
+    margin: 0 5px 40px;
+    padding: 5px 10px 20px 10px;
+    vertical-align: top;
+    border-radius: 5px;
+    background: url('img/content-area-grad.png') repeat-x;
+    zoom: 1;
+    *display: inline;
+    behavior: url(/wp-content/themes/futurestep/css/PIE/PIE.htc);
+}
+
+header.global,
+.introduction{
+    position: relative;
+    z-index:1000;
+}
+
+header.global nav.supplementary li a{
+    text-decoration: none;
+    padding-right:10px;
+    zoom: 1;
+    *display: inline;
+}
+
+.introduction {
+    z-index: 1;
+}
+
+.introduction .headline{
+    z-index: 10;
+}
+
+.divider{
+    padding: 0 0;
+    margin:  0 0;
+}
+
+header.global nav.supplementary li a:hover{
+    text-decoration: underline;
+}
+
+header.global nav.supplementary ul li{
+    display:inline;
+}
+
+header #services-navigation,
+.core-content .detail .body .expert-profile .vcard img{
+/* For IE 8 */
+-ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=1, Direction=135, Color='#666666')";
+/* For IE 5.5 - 7 */
+filter: progid:DXImageTransform.Microsoft.Shadow(Strength=0.25, Direction=135, Color='#666666');
+}
+
+.content .core-content  .only-child,
+.content .core-content .features .only-child{
+    border-bottom:1px none red; 
+}
+
+.core-content .client-list li:hover{
+    behavior: url(/wp-content/themes/futurestep/css/PIE/PIE.htc);
+}
+
+.core-content .detail ul.chronological li time {
+    margin-top: -5px;
+    width:16%;
+}
+
+.core-content .detail .calendar table .days-of-week tr,
+.core-content .detail .calendar table .days-of-week tr td{
+    background-color: #F57B20;
+}
+
+.core-content .detail .events-for-month ul.chronological li p {
+    width:64%;/*#carousel index .next{*/
+    /*margin-left:70px;*/
+/*}*/
+}
+
+
+.core-content .overview .index li{
+    margin-right: 10px;
+}
+
+.body .experts li.member{
+    display:block;
+    position:relative;
+    float:none;
+    clear:both;
+    width:100%;
+}
+
+.detail .index li{
+    margin-right:7px;
+}
+
+#carousel .index{
+    border: solid 1px transparent;
+}
+
+#carousel .index .next{
+    margin-left:70px;
+
+}
+
+core-content .client-list li .client-logo{
+    width: 210px;
+    height: 116px;
+}

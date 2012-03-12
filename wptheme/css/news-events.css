@@ -1,0 +1,66 @@
+.hidden{
+    display:none;
+}
+
+section aside.calendar{
+    background:#f79247;
+    width:193px;
+    padding: 0;
+    
+    border: 0;
+    margin: 0;
+
+    color:white;
+
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    min-height: 10px;
+}
+
+.calendar .months{
+    width:193px;
+    text-align: center;
+    font-family: LexiaBold, Georgia, serif;
+}
+
+.calendar .months a{
+    color:#fff;
+}
+
+.calendar .days-of-week{
+   background: #f57b20;
+}
+
+.calendar .days-of-week li,
+.calendar .days-in-month li{
+    font-weight: bold;
+    font-size:10px;
+    padding: 2px;
+    width:20px;
+    display:inline-block;
+    text-align:center;
+    border-top: solid 1px transparent;
+    border-right: solid 1px transparent;
+    margin: 0;
+}
+
+.calendar .days-in-month li a{
+    font-family: LexiaBold, Georgia, serif;
+    color: #000;
+    text-decoration: none;
+}
+
+.calendar .days-in-month{
+    background: #f1f1f1;
+    border-radius:3px;
+    border: none 0 transparent;
+    border-bottom: solid 1px #f1f1f1;
+}
+.calendar .days-in-month li{
+    border-top: dashed 1px #aaa;
+    border-right: dashed 1px #aaa;
+}
+
+.calendar .days-in-month li:nth-child(7n+1){
+    border-right: none 0px transparent;
+}

@@ -1,0 +1,22 @@
+[30-Sep-2011 15:45:50] PHP Parse error:  syntax error, unexpected ':' in /home/rinntech/public_html/futurestep/wp-content/themes/futurestep/js/office-finder.php on line 27
+[30-Sep-2011 15:46:30] PHP Parse error:  syntax error, unexpected ':' in /home/rinntech/public_html/futurestep/wp-content/themes/futurestep/js/office-finder.php on line 27
+[30-Sep-2011 15:46:47] PHP Parse error:  syntax error, unexpected ':' in /home/rinntech/public_html/futurestep/wp-content/themes/futurestep/js/office-finder.php on line 27
+[30-Sep-2011 15:47:30] PHP Parse error:  syntax error, unexpected ':' in /home/rinntech/public_html/futurestep/wp-content/themes/futurestep/js/office-finder.php on line 27
+[30-Sep-2011 15:47:31] PHP Parse error:  syntax error, unexpected ':' in /home/rinntech/public_html/futurestep/wp-content/themes/futurestep/js/office-finder.php on line 27
+[30-Sep-2011 15:47:32] PHP Parse error:  syntax error, unexpected ':' in /home/rinntech/public_html/futurestep/wp-content/themes/futurestep/js/office-finder.php on line 27
+[30-Sep-2011 15:48:50] PHP Parse error:  syntax error, unexpected ':' in /home/rinntech/public_html/futurestep/wp-content/themes/futurestep/js/office-finder.php on line 27
+[30-Sep-2011 15:48:50] PHP Parse error:  syntax error, unexpected ':' in /home/rinntech/public_html/futurestep/wp-content/themes/futurestep/js/office-finder.php on line 27
+[30-Sep-2011 15:48:51] PHP Parse error:  syntax error, unexpected ':' in /home/rinntech/public_html/futurestep/wp-content/themes/futurestep/js/office-finder.php on line 27
+[30-Sep-2011 15:48:51] PHP Parse error:  syntax error, unexpected ':' in /home/rinntech/public_html/futurestep/wp-content/themes/futurestep/js/office-finder.php on line 27
+[30-Sep-2011 15:48:52] PHP Parse error:  syntax error, unexpected ':' in /home/rinntech/public_html/futurestep/wp-content/themes/futurestep/js/office-finder.php on line 27
+[30-Sep-2011 15:48:52] PHP Parse error:  syntax error, unexpected ':' in /home/rinntech/public_html/futurestep/wp-content/themes/futurestep/js/office-finder.php on line 27
+[30-Sep-2011 15:48:52] PHP Parse error:  syntax error, unexpected ':' in /home/rinntech/public_html/futurestep/wp-content/themes/futurestep/js/office-finder.php on line 27
+[30-Sep-2011 15:48:52] PHP Parse error:  syntax error, unexpected ':' in /home/rinntech/public_html/futurestep/wp-content/themes/futurestep/js/office-finder.php on line 27
+[30-Sep-2011 15:49:26] PHP Fatal error:  Class 'WP_Query' not found in /home/rinntech/public_html/futurestep/wp-content/themes/futurestep/js/office-finder.php on line 23
+[30-Sep-2011 15:51:44] PHP Warning:  require(/wp-blog-header.php) [<a href='function.require'>function.require</a>]: failed to open stream: No such file or directory in /home/rinntech/public_html/futurestep/wp-content/themes/futurestep/js/office-finder.php on line 4
+[30-Sep-2011 15:51:44] PHP Fatal error:  require() [<a href='function.require'>function.require</a>]: Failed opening required '/wp-blog-header.php' (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/rinntech/public_html/futurestep/wp-content/themes/futurestep/js/office-finder.php on line 4
+[30-Sep-2011 16:20:52] PHP Parse error:  syntax error, unexpected '(', expecting T_VARIABLE or '$' in /home/rinntech/public_html/futurestep/wp-content/themes/futurestep/js/office-finder.php on line 2
+[30-Sep-2011 16:56:31] PHP Parse error:  syntax error, unexpected T_ENDIF in /home/rinntech/public_html/futurestep/wp-content/themes/futurestep/js/office-finder.php on line 41
+[30-Sep-2011 16:56:46] PHP Parse error:  syntax error, unexpected T_ENDIF in /home/rinntech/public_html/futurestep/wp-content/themes/futurestep/js/office-finder.php on line 41
+[30-Sep-2011 16:58:03] PHP Parse error:  syntax error, unexpected T_ENDIF in /home/rinntech/public_html/futurestep/wp-content/themes/futurestep/js/office-finder.php on line 41
+[30-Sep-2011 16:58:31] PHP Parse error:  syntax error, unexpected T_ENDIF in /home/rinntech/public_html/futurestep/wp-content/themes/futurestep/js/office-finder.php on line 41

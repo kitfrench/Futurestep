@@ -1,0 +1,26 @@
+# RAMP (Review And Move to Production)
+
+# 1.0.3
+
+- Cleanup and bug fixes
+- Adding the Screen Icon image
+- Duplicate GUID fix
+- Fix sending custom post types
+- Improve messaging when remote server is not correctly configured
+
+# 1.0.2
+- updated auth key validation
+- implement nonces on own server requests
+- name change to RAMP
+- server communications check added to settings screen
+- update plugins check to only consider active plugins
+- disable preflight button if no items are selected in batch creation screen
+- changed permissions requirements to `publish_posts` & provide filter on permissions check
+- fix user contact data additions to user profile data
+
+# 1.0.1
+- switch admin-ui library component to pull from google code repository
+- fixed issue with removing attachments from a post
+
+# 1.0
+- initial "ready" release

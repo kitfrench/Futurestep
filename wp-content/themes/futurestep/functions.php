@@ -208,6 +208,8 @@ function getJobDetails($feedtype, $feedaddress) {
 }
 
 function update_jobslider_db() {
+        
+        global $wpdb;
         $wpdb->query("ALTER TABLE `feedstore` ADD `language` VARCHAR( 50 ) NOT NULL;");
         $wpdb->query("UPDATE `feedstore` SET `language`='en'");
 }

@@ -175,7 +175,7 @@ function getJobDetails($feedtype, $feedaddress) {
  //
  function outputhomejobsslider() {
         global $wpdb;
-        $wpdb->query("CREATE TABLE IF NOT EXISTS `feedstore` ( `ID` INT NOT NULL AUTO_INCREMENT , `time` TIMESTAMP NOT NULL ,`output` VARCHAR( 50000 ) NOT NULL, PRIMARY KEY (  `ID` ))");
+        $wpdb->query("CREATE TABLE IF NOT EXISTS `feedstore` ( `ID` INT NOT NULL AUTO_INCREMENT , `time` TIMESTAMP NOT NULL ,`output` VARCHAR( 50000 ) NOT NULL, `language` VARCHAR( 50 ) NOT NULL, PRIMARY KEY (  `ID` ))");
         
         $wpdb->query("SELECT * FROM `feedstore`");
         $columns = $wpdb->get_col_info('name', -1);
@@ -283,7 +283,9 @@ function update_jobslider_db() {
     
     
 //TRANSLATION STRINGS
-    
+if (is_null(ICL_LANGUAGE_CODE)) :
+    //plugin is activated
+
     icl_register_string('Header', 'Java Drop Down', 'Services');
     icl_register_string('Header', 'Find a job', 'Find a job');
     icl_register_string('Header', 'Futurestep home', 'Futurestep home');
@@ -399,6 +401,7 @@ function update_jobslider_db() {
     icl_register_string('Site Map', 'Find an Expert', 'Find an Expert');
     icl_register_string('Site Map', 'Privacy', 'Privacy');
     
+    endif;
     ///
     include_once 'fs-jobslider.php';
 ?>

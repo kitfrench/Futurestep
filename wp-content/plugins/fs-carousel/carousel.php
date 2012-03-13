@@ -8,22 +8,51 @@ Version: 1
 Author URI: http://www.furthercreative.co.uk/
 */
 //echo "ADD MySQL creation here";
-$wpdb->query('CREATE TABLE IF NOT EXISTS `carousel` (
-`slot` INT NOT NULL AUTO_INCREMENT ,
-`image` VARCHAR( 250 ) NOT NULL ,
-`line1` VARCHAR( 250 ) NOT NULL ,
-`line2` VARCHAR( 250 ) NOT NULL ,
-`line3` VARCHAR( 250 ) NOT NULL ,
-`link` VARCHAR( 350 ) NOT NULL ,
-`modified` TIMESTAMP NOT NULL ,
-`language` VARCHAR( 50 ) NOT NULL ,
-PRIMARY KEY (  `slot` ))');
+$pluginversion = 2;
 
-$wpdb->query("INSERT IGNORE INTO carousel (`slot`, `language`) VALUES('1', 'en');");
-$wpdb->query("INSERT IGNORE INTO carousel (`slot`, `language`) VALUES('2', 'en');");
-$wpdb->query("INSERT IGNORE INTO carousel (`slot`, `language`) VALUES('3', 'en');");
-$wpdb->query("INSERT IGNORE INTO carousel (`slot`, `language`) VALUES('4', 'en');");
+register_activation_hook(__FILE__,'install_script');
 
+function install_script () {
+    global $wpdb;
+    
+    $wpdb->query('CREATE TABLE IF NOT EXISTS `carousel` (
+    `slot` INT NOT NULL AUTO_INCREMENT ,
+    `image` VARCHAR( 250 ) NOT NULL ,
+    `line1` VARCHAR( 250 ) NOT NULL ,
+    `line2` VARCHAR( 250 ) NOT NULL ,
+    `line3` VARCHAR( 250 ) NOT NULL ,
+    `link` VARCHAR( 350 ) NOT NULL ,
+    `modified` TIMESTAMP NOT NULL ,
+    `language` VARCHAR( 50 ) NOT NULL ,
+    PRIMARY KEY (  `slot` ))');
+
+    $wpdb->query("INSERT IGNORE INTO carousel (`slot`, `language`) VALUES('1', 'en');");
+    $wpdb->query("INSERT IGNORE INTO carousel (`slot`, `language`) VALUES('2', 'en');");
+    $wpdb->query("INSERT IGNORE INTO carousel (`slot`, `language`) VALUES('3', 'en');");
+    $wpdb->query("INSERT IGNORE INTO carousel (`slot`, `language`) VALUES('4', 'en');");
+    
+    $wpdb->query("SELECT * FROM `carousel`");
+    $columns = $wpdb->get_col_info('name', -1);
+    
+    if(!in_array('langauge', $columns)) {
+        update_carousel_plugin();
+    }
+    
+    update_option( "carousel_plugin_version", $pluginversion );
+}
+
+if (get_site_option('carousel_plugin_version') != $pluginversion) {
+        update_carousel_plugin();
+    }
+
+function update_carousel_plugin() {
+    global $wpdb;
+
+        $wpdb->query("ALTER TABLE `carousel` ADD `language` VARCHAR( 50 ) NOT NULL;");
+        $wpdb->query("UPDATE `carousel` SET `language`='en'");
+        update_option( "carousel_plugin_version", $pluginversion );
+}    
+    
 //ADD PAGE TO SHOW Carousel Admin
 add_action('admin_menu', 'carousel_adminmenu');
 

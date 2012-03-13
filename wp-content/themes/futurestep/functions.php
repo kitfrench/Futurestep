@@ -163,7 +163,7 @@ function getJobDetails($feedtype, $feedaddress) {
                 endforeach;
                 $x=1;
             endif;
-    endforeach;
+        endforeach;
 
         wp_cache_set($cacheKey, $jobdetails);
 
@@ -177,6 +177,13 @@ function getJobDetails($feedtype, $feedaddress) {
         global $wpdb;
         $wpdb->query("CREATE TABLE IF NOT EXISTS `feedstore` ( `ID` INT NOT NULL AUTO_INCREMENT , `time` TIMESTAMP NOT NULL ,`output` VARCHAR( 50000 ) NOT NULL, PRIMARY KEY (  `ID` ))");
         
+        $wpdb->query("SELECT * FROM `feedstore`");
+        $columns = $wpdb->get_col_info('name', -1);
+    
+        if(!in_array('langauge', $columns)) {
+            update_jobslider_db();
+        }
+        
         $languages = icl_get_languages('skip_missing=1');
         $x=1;
           foreach ($languages as $l) :
@@ -184,8 +191,7 @@ function getJobDetails($feedtype, $feedaddress) {
             $x++;
           endforeach;
         
-        $querystr="SELECT * FROM feedstore WHERE `language` = ".ICL_LANGUAGE_CODE." AND `time`>(NOW()-10800)";
-        
+        $querystr="SELECT * FROM feedstore WHERE `language` = '".ICL_LANGUAGE_CODE."' AND `time`>(NOW()-10800)";
         $feedoutput = $wpdb->get_row($querystr, OBJECT);
     
       if(is_null($feedoutput))   {
@@ -199,6 +205,11 @@ function getJobDetails($feedtype, $feedaddress) {
           echo $feedoutput->output;
       }
 
+}
+
+function update_jobslider_db() {
+        $wpdb->query("ALTER TABLE `feedstore` ADD `language` VARCHAR( 50 ) NOT NULL;");
+        $wpdb->query("UPDATE `feedstore` SET `language`='en'");
 }
     
     //READ OUT JOBSSLIDER FILE

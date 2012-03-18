@@ -7,7 +7,7 @@ $wpdb->query('CREATE TABLE IF NOT EXISTS `feedlocations` (
 `locations` VARCHAR( 250 ) NOT NULL ,
 `language` VARCHAR( 50 ) NOT NULL ,
 PRIMARY KEY (  `slot` ))');
-
+if(function_exists('icl_get_languages')) :
   $languages = icl_get_languages('skip_missing=1');
   $x=1;  
   foreach ($languages as $l) :
@@ -36,6 +36,19 @@ function jobslider_adminmenu() {
 
 }
 
+function recache_slider($lang) {
+    global $sitepress;
+    global $wpdb;
+    $oldLang = ICL_LANGUAGE_CODE;
+    $sitepress->switch_lang($lang);
+    
+    $string = get_include_contents("../wp-content/themes/futurestep/home-jobsslider.php");   
+    $query = sprintf("UPDATE `feedstore` SET `time`=CURRENT_TIMESTAMP, `output`='%s' WHERE language='".$lang['language_code']."'",  mysql_real_escape_string($string));
+    $wpdb->query($query);
+    $wpdb->print_error();
+    $sitepress->switch_lang($oldlang);
+}
+
 function jobslider_adminoptions() {
     
  global $wpdb;
@@ -50,10 +63,17 @@ function jobslider_adminoptions() {
     foreach( $locations as $location ) { 
         if($_POST['Save']) {
             $slot_id=$location->slot;
-            $wpdb->query("UPDATE feedlocations SET `locations` = '".$_POST[$slot_id.'-locations']."', `category` = '".$_POST[$slot_id.'-category']."', `language` = '".$_POST[$slot_id.'-language']."' WHERE slot ='".$location->slot."'");
+            $wpdb->query("UPDATE feedlocations SET `locations` = '".$_POST[$slot_id.'-locations']."', `category` = '".$_POST[$slot_id.'-category']."', `language` = '".$_POST[$slot_id.'-language']."' WHERE slot ='".$location->slot."'");         
         } 
     }
- 
+  
+  $languages = icl_get_languages('skip_missing=1');
+    foreach ($languages as $l) : 
+        if($_POST['Save']) {
+            recache_slider($l);          
+        } 
+    endforeach;
+
 ?>
   <div class="wrap">
   <div id="icon-edit-pages" class="icon32"></div>
@@ -95,5 +115,5 @@ foreach ($languages as $l) : ?>
 <?php
 }
 //
-
+endif;
 ?>

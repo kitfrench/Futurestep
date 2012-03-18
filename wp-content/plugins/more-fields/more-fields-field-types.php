@@ -33,17 +33,17 @@
 		$f['wysiwyg']['html_before'] = '
 		   
 			   <div style="width: 100%" class="mf_field_wysiwyg">
-			   <label class="mf_wysiwig" for="%key%">%title%</label>
-		   <textarea class="%class% %key%" name="%key%" id="%key%">%value%' . "\n";
+			   <label class="mf_wysiwig" for="%key%">%title%</label>'. "\n";
+		   //<textarea class="%class% %key%" name="%key%" id="%key%">%value%' . "\n";
 		   
 	//	$f['wysiwyg']['html_before'] << wp_editor($post->post_content, 'content', array('dfw' => true) );
 // ed.settings.theme_advanced_buttons1 += ',|,add_image,add_video,add_audio,add_media';		   
 //		$f['wysiwyg']['html_before'] = '<textarea class="%class% %key%" name="%key%" id="%key%">' . "\n";
-		add_action('mf_the_editor', 'the_editor', 10, 2);
+		//add_action('mf_the_editor', 'the_editor', 10, 2);
 		// function the_editor($content, $id = 'content', $prev_id = 'title', $media_buttons = true, $tab_index = 2) {
 //		$f['wysiwyg']['actions'] = array('mf_the_editor' => array( '%value%', '%key%'));
 		$f['wysiwyg']['html_item'] = "";
-		$f['wysiwyg']['html_after'] = "</textarea></div>\n %caption%";
+		$f['wysiwyg']['html_after'] = "</div>\n %caption%";
 		$f['wysiwyg']['comment'] = __('Creates text box that allows formatted input. WYSIWYG - What you see is what you get', 'more-plugins');
 
 		/*

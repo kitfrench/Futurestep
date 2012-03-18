@@ -8,12 +8,14 @@ Version: 1
 Author URI: http://www.furthercreative.co.uk/
 */
 //echo "ADD MySQL creation here";
-$pluginversion = 2;
+global $carouselpluginversion;
+$carouselpluginversion = 2;
 
 register_activation_hook(__FILE__,'install_script');
 
 function install_script () {
     global $wpdb;
+    global $carouselpluginversion;
     
     $wpdb->query('CREATE TABLE IF NOT EXISTS `carousel` (
     `slot` INT NOT NULL AUTO_INCREMENT ,
@@ -38,19 +40,20 @@ function install_script () {
         update_carousel_plugin();
     }
     
-    update_option( "carousel_plugin_version", $pluginversion );
+    update_option( "carousel_plugin_version", $carouselpluginversion );
 }
 
-if (get_site_option('carousel_plugin_version') != $pluginversion) {
+if (get_option('carousel_plugin_version') != $carouselpluginversion) {
         update_carousel_plugin();
     }
 
 function update_carousel_plugin() {
     global $wpdb;
+    global $carouselpluginversion;
 
         $wpdb->query("ALTER TABLE `carousel` ADD `language` VARCHAR( 50 ) NOT NULL;");
         $wpdb->query("UPDATE `carousel` SET `language`='en'");
-        update_option( "carousel_plugin_version", $pluginversion );
+        update_option( "carousel_plugin_version", $carouselpluginversion );
 }    
     
 //ADD PAGE TO SHOW Carousel Admin

@@ -16,7 +16,7 @@ function flushRules(){
 // Adding a new rule
 function wp_insertMyRewriteRules($rules){
 	$newrules = array();
-        
+        if(function_exists('icl_get_languages')) :
         $my_id = icl_object_id(207, 'page');
 	$newrules['([^/]+)/'.get_post($my_id)->post_name.'/(.+)'] = 'index.php?page_id='.$my_id.'&eventyear=$matches[2]';
         
@@ -36,7 +36,8 @@ function wp_insertMyRewriteRules($rules){
 	$fifthnewrules[get_post($my_id)->post_name.'/region/(.+)'] = 'index.php?page_id='.$my_id.'&category-region=$matches[1]';
 	
         $finalrules = $fifthnewrules + $fourthnewrules + $thirdnewrules + $secondnewrules + $newrules + $rules;
-        return $finalrules;      
+        return $finalrules;
+        endif;
 }
 
 // Adding the var so that WP recognizes it
@@ -215,25 +216,26 @@ function update_jobslider_db() {
 }
     
     //READ OUT JOBSSLIDER FILE
-    function get_include_contents($filename) {
+function get_include_contents($filename) {
             if (is_file($filename)) {
                 ob_start();
                 include $filename;
                 return ob_get_clean();
             }
-            
+            echo 'not file';
+
         return false;
-        }
+}
         //
 
-    function format_content($content)
+function format_content($content)
     {
         $content = apply_filters('the_content', $content);
         $content = str_replace(']]>', ']]&gt;', $content);
         return $content;
-    }
+}
 
-    function dateHasPosts($wpdb, $year, $month, $day, $type){
+function dateHasPosts($wpdb, $year, $month, $day, $type){
 
        //echo('year = '.$year.'. Month = '.$month.'. Day = '.$day.'. Type = '.$type);
 
@@ -259,9 +261,9 @@ function update_jobslider_db() {
      $pageposts = $wpdb->query($querystr, OBJECT);
 
     return $pageposts;
-    }
+}
 
-    function surroundStringWith($stringValue, $template){
+function surroundStringWith($stringValue, $template){
 
         //return nothing if the string value is empty.
         if($stringValue == null || strLen($stringValue) <= 0){
@@ -278,7 +280,7 @@ function update_jobslider_db() {
         }
 
         return str_replace( "{{replace}}", $stringValue, $template);
-    }
+}
 
     
     

@@ -288,6 +288,7 @@ class more_fields_admin extends more_plugins_admin_object_sputnik_8 {
 
 		foreach ((array) $box['fields'] as $field) {
 			if (!($field = apply_filters('mf_field', $field))) continue;
+                        if ($field['field_type'] == 'wysiwyg');
 //__d($field);
 			$title = '<label class="mf_label" for="' . $field['key'] . '">' . $field['label'] . ':</label>';
 			
@@ -332,12 +333,20 @@ class more_fields_admin extends more_plugins_admin_object_sputnik_8 {
 			if (empty($values)) echo $this->field_type_render($type['html_item'], $field, $box['position']);
 			else {
 				foreach ($values as $v) {
-				
+                                        if ($field['field_type'] == 'wysiwyg'){
+                                            global $post;
+                                            echo $field['key'];
+                                            $value_stored = (get_post_meta($post->ID, $field['key'], true));
+                                            if (!$v) $v = $value_stored;
+                                            $value = (strstr($v, '*') && ($html_selected)) ? substr($v, 1) : $v;
+                                            wp_editor( $value, $field['key'], $settings = array() );
+                                        } else {
 					// If there is a range but no item template (e.g. html5 range)
-					if (!array_key_exists('html_item', $type)) continue;
+                                            if (!array_key_exists('html_item', $type)) continue;
 			
-					if (!array_key_exists('html_selected', $type)) $type['html_selected'] = '';
-					echo $this->field_type_render($type['html_item'], $field, $box['position'], rtrim(ltrim($v)), $type['html_selected']);
+                                            if (!array_key_exists('html_selected', $type)) $type['html_selected'] = '';
+                                            echo $this->field_type_render($type['html_item'], $field, $box['position'], rtrim(ltrim($v)), $type['html_selected']);
+                                        }
 				}
 			}
 

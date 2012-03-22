@@ -55,7 +55,7 @@
             $args = array( 'taxonomy' => 'category-region' );
             $terms = get_terms('category-region', $args);
             foreach($terms as $term) : ?>
-                            <?php if($term->parent != 0) :?><option value="<?php echo $term->slug; ?>"<?php if($term->name==ICL_LANGUAGE_NAME && $_POST['country']=='') echo ' selected="selected"'; ?>><?php echo $term->name; ?></option><?php endif; ?>
+                            <?php if($term->parent != 0) :?><option <?php if($_POST['country']==$term->slug) echo 'selected="selected" '; ?>value="<?php echo $term->slug; ?>"<?php if($term->name==ICL_LANGUAGE_NAME && $_POST['country']=='') echo ' selected="selected"'; ?>><?php echo $term->name; ?></option><?php endif; ?>
           <?php  endforeach; ?>
                         </select>
                     </label>
@@ -67,7 +67,7 @@
             $args = array( 'taxonomy' => 'category-sector' );
             $terms = get_terms('category-sector', $args);
             foreach($terms as $term) :  ?>
-                            <option value="<?php echo $term->slug; ?>"><?php echo $term->name; ?></option>
+                            <option <?php if($_POST['sector']==$term->slug) echo 'selected="selected" '; ?>value="<?php echo $term->slug; ?>"><?php echo $term->name; ?></option>
           <?php  endforeach; ?>
                         </select>
                     </label>
@@ -81,12 +81,12 @@
             $terms = get_terms('category-solution', $args);
             $x=0;
             foreach($terms as $term) : ?>
-                            <option value="<?php echo $term->slug; ?>"><?php echo $term->name; ?></option>
+                            <option <?php if($_POST['service']==$term->slug) echo 'selected="selected" '; ?>value="<?php echo $term->slug; ?>"><?php echo $term->name; ?></option>
             <?php $args = array( 'taxonomy' => 'category-solution', 'hide_empty' => false, 'parent' => $term->term_id );
                 $terms2 = get_terms('category-solution', $args);
                 $x=0;
                 foreach($terms2 as $term2) : ?>
-                            <option value="<?php echo $term2->slug; ?>"><?php echo "-".$term2->name; ?></option>
+                            <option <?php if($_POST['service']==$term2->slug) echo 'selected="selected" '; ?>value="<?php echo $term2->slug; ?>"><?php echo "-".$term2->name; ?></option>
                 <?php  endforeach; ?>
             <?php  endforeach; ?>
                         </select>

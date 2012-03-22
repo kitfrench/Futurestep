@@ -16,10 +16,10 @@
 
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
-        define('DB_NAME', 'fswp-v0001');
+        define('DB_NAME', 'futurestep_futurestep');
 
         /** MySQL database username */
-        define('DB_USER', 'rinntech_admin');
+        define('DB_USER', 'eliot');
 
         /** MySQL database password */
         define('DB_PASSWORD', 'P455word');

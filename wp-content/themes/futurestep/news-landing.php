@@ -13,7 +13,7 @@ setup_postdata($post);
     $contributors = get_post_meta(get_the_ID(), 'contributors', true);
 ?>
     <h1><a href="<?php the_permalink();?>"><?php the_title(); ?></a></h1>
-    <p class="source"><?php if($contributors!='') echo $contributors.', '; ?><?php the_time('M d Y'); ?></p>
+    <p class="source"><?php if($contributors!='') echo $contributors.', '; ?><?php echo date( 'M d Y', $eventdate); ?>&nbsp;<?php echo strftime('%H:%M', $eventtime); ?></p>
     <?php endwhile; ?>
         <a href="<?php echo get_permalink(icl_object_id(207, 'page')); ?>"><?php echo icl_t('News - Landing', 'View events calendar', 'View events calendar'); ?></a>
       

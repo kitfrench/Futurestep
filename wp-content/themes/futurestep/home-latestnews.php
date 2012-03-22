@@ -52,6 +52,7 @@
                     <?php echo icl_t('Home', 'Working for us - prose', 'Futurestep has a global presence, with offices across five continents. No matter which one of them
                     interests you, we encourage you to register and start the application process immediately.'); ?>
                 </p>
+
                 <a href="<?php echo get_permalink(icl_object_id(3949, 'page')); ?>" class="continue" target="new"><?php echo icl_t('Home', 'Find out more', 'Find out more'); ?><span class="decoration sprite right-arrow-grey"><span>&gt;</span></span></a>
       </div>
     

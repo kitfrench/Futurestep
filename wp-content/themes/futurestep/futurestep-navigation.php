@@ -5,7 +5,7 @@
                 <a href="http://candidates.futurestep.com" title="My Futurestep"><?php echo icl_t('Header', 'My futurestep', 'My futurestep'); ?></a></li>
         </ul>
         <a href="<?php bloginfo('siteurl'); ?>/feed" class="rss-link sprite"><?php echo icl_t('Header', 'Subscribe', 'Subscribe'); ?></a>
-        <?php do_action('icl_language_selector'); ?>
+        <?php #do_action('icl_language_selector'); ?>
     </nav>
 
     <div class="identity">
@@ -36,7 +36,7 @@
         <?php endforeach; ?>
 
       <li class="candidates">
-                <a href="http://careers.futurestep.com" title="Find a job" target="new"><?php echo icl_t('Header', 'Find a job', 'Find a job'); ?> <span class="decoration sprite right-arrow-grey"><span>&gt;</span></span></a></li>
+                <a href="http://careers.futurestep.com" title="Find a job" target="new"><?php echo icl_t('Header', 'Clients\' Jobs', 'Clients\' Jobs'); ?> <span class="decoration sprite right-arrow-grey"><span>&gt;</span></span></a></li>
     </ul>
   </nav>
     <div class="services-navigation-container">

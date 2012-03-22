@@ -289,7 +289,7 @@ if (is_null(ICL_LANGUAGE_CODE)) :
     //plugin is activated
 
     icl_register_string('Header', 'Java Drop Down', 'Services');
-    icl_register_string('Header', 'Find a job', 'Find a job');
+    icl_register_string('Header', 'Clients\' Jobs', 'Clients\' Jobs');
     icl_register_string('Header', 'Futurestep home', 'Futurestep home');
     icl_register_string('Header', 'My futurestep', 'My futurestep');
     icl_register_string('Header', 'Subscribe', 'Subscribe');
@@ -302,7 +302,7 @@ if (is_null(ICL_LANGUAGE_CODE)) :
     icl_register_string('Home', 'View all insights', 'View all insights');
     icl_register_string('Home', 'Job Opportunites with our clients', 'Job Opportunites with our clients');
     icl_register_string('Home', 'Apply for this job', 'Apply for this job');
-    icl_register_string('Home', 'See our most recent roles', 'See our most recent roles');
+    icl_register_string('Home', 'See jobs with our clients', 'See jobs with our clients');
     icl_register_string('Home', 'Latest News and Events', 'Latest News and Events');
     icl_register_string('Home', 'Register for event', 'Register for event');
     

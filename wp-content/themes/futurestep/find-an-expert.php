@@ -18,14 +18,14 @@
 					$args['posts_per_page'] = 1000;
 					$args['orderby'] = 'title';
 					$args['order'] = 'ASC';
-					 
+
 					if (@$_POST['sector'] > ' ')
 					 	$args['category-sector'] = $_POST['sector'];
 					if (@$_POST['country'] > ' ')
 					 	$args['category-region'] = $_POST['country'];
 					if (@$_POST['service'] > ' ')
-					 	$args['category-solution'] = $_POST['service'];					 
-						
+					 	$args['category-solution'] = $_POST['service'];
+
                     $loop = new WP_Query( $args );
 
                   while ( $loop->have_posts() ) : $loop->the_post();
@@ -41,17 +41,17 @@
                 <?php endwhile; ?>
                 </ul>
             </section>
-            
+
             <aside class="features">
                 <aside class="summary">
-                    <h1><?php echo icl_t('Job Form', 'Find an expert', 'Find an expert'); ?></h1> 
+                    <h1><?php echo icl_t('Job Form', 'Find an expert', 'Find an expert'); ?></h1>
 
                 <form action="<?php echo get_permalink(icl_object_id(303, 'page')); ?>" method="post">
                     <label>
                         <span><?php echo icl_t('Job Form', 'Select a country', 'Select a country'); ?></span>
                         <select name="country">
                             <option value=""><?php echo icl_t('Job Form', 'Select a country', 'Select a country'); ?></option>
-          <?php 
+          <?php
             $args = array( 'taxonomy' => 'category-region' );
             $terms = get_terms('category-region', $args);
             foreach($terms as $term) : ?>
@@ -63,7 +63,7 @@
                         <span><?php echo icl_t('Job Form', 'Select a sector', 'Select a sector'); ?></span>
                         <select name="sector">
                             <option value=""><?php echo icl_t('Job Form', 'Select a sector', 'Select a sector'); ?></option>
-          <?php 
+          <?php
             $args = array( 'taxonomy' => 'category-sector' );
             $terms = get_terms('category-sector', $args);
             foreach($terms as $term) :  ?>
@@ -76,7 +76,7 @@
                         <span><?php echo icl_t('Job Form', 'Select a solution', 'Select a solution'); ?></span>
                         <select name="service">
                             <option value=""><?php echo icl_t('Job Form', 'Select a solution', 'Select a solution'); ?></option>
-          <?php 
+          <?php
             $args = array( 'taxonomy' => 'category-solution', 'hide_empty' => false, 'parent' => 0 );
             $terms = get_terms('category-solution', $args);
             $x=0;

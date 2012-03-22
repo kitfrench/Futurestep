@@ -84,10 +84,11 @@ ul {
     padding: 0;
 }
 
-ol {
+ol{
+    padding-left:20px;
 }
 
-li {
+ul li {
     list-style: none;
 }
 
@@ -102,12 +103,6 @@ label span {
 .country-filter{
     vertical-align: baseline;
     margin-right:20px;
-}
-
-#lang_sel {
-    float:right;
-    vertical-align: baseline;
-    margin-top:5px;
 }
 
 /* microformats */
@@ -298,7 +293,7 @@ header.global {
 }
 
 header.global nav.supplementary {
-    width: 1000px;
+    width: 940px;
     margin: 0 auto;
     text-align: left;
     text-transform: none;
@@ -369,7 +364,7 @@ header .locale {
 
 
 header .identity {
-    width: 1000px;
+    width: 940px;
     margin: 0 auto;
     margin-bottom: 25px;
     position: relative;
@@ -423,7 +418,7 @@ header nav.primary {
 
 /** FIXED WIDTH */
 header nav.primary ul {
-    width: 985px;
+    width: 925px;
     margin: 0 auto;
     padding: 2px;
     text-align: left;
@@ -571,7 +566,7 @@ footer a{
 footer nav {
     text-align: left;
     margin: 0 auto;
-    width: 1000px;
+    width: 940px;
     height: 64px;
     position: relative;
 }
@@ -646,7 +641,7 @@ footer nav ul.social-media li a span {
 /** FIXED WIDTH */
 #carousel,
 .introduction {
-    width: 970px;
+    width: 910px;
     /*height: 387px;*/
     height: 300px;
     margin: 0 auto;
@@ -671,8 +666,8 @@ footer nav ul.social-media li a span {
 /** FIXED WIDTH */
 #carousel ul.headlines li.hero {
     /*NOTE: contains fixed width / height*/
-    height: 387px;
-    width: 970px;
+    height: 300px;
+    width: 910px;
     margin: 0;
     padding: 0;
     display: inline-block;
@@ -763,57 +758,57 @@ footer nav ul.social-media li a span {
 
 /* butterfly */
 #carousel ul.headlines li.butterfly {
-    background: url(img/illustrations/carousel/Carousel_Butterfly.png) no-repeat bottom right;
+    background: url(img/illustrations/carousel/carousel-300-butterfly.png) no-repeat bottom right;
 }
 
 /* chameleon */
 #carousel ul.headlines li.chameleon {
-    background: url(img/illustrations/carousel/Carousel_chameleon.png) no-repeat bottom right;
+    background: url(img/illustrations/carousel/carousel-300-chameleon.png) no-repeat bottom right;
 }
 
 /* chess */
 #carousel ul.headlines li.chess {
-    background: url(img/illustrations/carousel/Carousel_Chess.png) no-repeat bottom right;
+    background: url(img/illustrations/carousel/carousel-300-chess.png) no-repeat bottom right;
 }
 
 /* city */
 #carousel ul.headlines li.city {
-    background: url(img/illustrations/carousel/Carousel_City.png) no-repeat bottom right;
+    background: url(img/illustrations/carousel/carousel-300-city.png) no-repeat bottom right;
 }
 
 /* dragon */
 #carousel ul.headlines li.dragon {
-    background: url(img/illustrations/carousel/Carousel_Dragon.png) no-repeat bottom right;
+    background: url(img/illustrations/carousel/carousel-300-dragon.png) no-repeat bottom right;
 }
 
 /* globe */
 #carousel ul.headlines li.globe {
-    background: url(img/illustrations/carousel/Carousel_Globe.png) no-repeat bottom right;
+    background: url(img/illustrations/carousel/carousel-300-globe.png) no-repeat bottom right;
 }
 
 /* hangglider*/
 #carousel ul.headlines li.hangglider {
-    background: url(img/illustrations/carousel/Carousel_Hang-glider.png) no-repeat bottom right;
+    background: url(img/illustrations/carousel/carousel-300-hangglider.png) no-repeat bottom right;
 }
 
 /* head*/
 #carousel ul.headlines li.head {
-    background: url(img/illustrations/carousel/Carousel_Head.png) no-repeat bottom right;
+    background: url(img/illustrations/carousel/carousel-300-head.png) no-repeat bottom right;
 }
 
 /* rowers */
 #carousel ul.headlines li.rowers {
-    background: url(img/illustrations/carousel/Carousel_Rowers.png) no-repeat bottom right;
+    background: url(img/illustrations/carousel/carousel-300-rowers.png) no-repeat bottom right;
 }
 
 /* trainers */
 #carousel ul.headlines li.trainers {
-    background: url(img/illustrations/carousel/Carousel_Trainers.png) no-repeat bottom right;
+    background: url(img/illustrations/carousel/carousel-300-trainers.png) no-repeat bottom right;
 }
 
 /* tree */
 #carousel ul.headlines li.tree {
-    background: url(img/illustrations/carousel/Carousel_Tree.png) no-repeat bottom right;
+    background: url(img/illustrations/carousel/carousel-300-tree.png) no-repeat bottom right;
 }
 
 /*#carousel .index{*/
@@ -1012,7 +1007,7 @@ a.prev:hover{
 
 /** FIXED WIDTH */
 .core-content {
-    width: 970px;
+    width: 910px;
     margin: 0 auto;
     padding: 10px 15px;
     min-height: 300px;
@@ -1253,7 +1248,7 @@ a.prev:hover{
 
 /* 1/1  used with detail */
 .core-content .overview {
-    width: 940px;
+    width: 880px;
     background: #fff;
     /*outline: solid 1px red;*/
 }
@@ -1360,7 +1355,7 @@ a.prev:hover{
 /*insights */
 /** FIXED WIDTH */
 .introduction {
-    width: 970px;
+    width: 910px;
     margin: 0 auto;
     padding: 10px;
     position: relative;
@@ -1786,7 +1781,7 @@ http://microformats.org/wiki/hcard#Property_List
 
 /** FIXED WIDTH */
 #map-container {
-    width: 675px;
+    width: 635px;
     height: 387px;
 }
 
@@ -1889,8 +1884,8 @@ http://microformats.org/wiki/hcard#Property_List
 
 /** FIXED WIDTH */
 .introduction-illustration {
-    min-width: 1000px;
-    width: 1000px;
+    min-width: 940px;
+    width: 940px;
     margin: 0 auto;
     height: 400px;
     z-index: 0;
@@ -1943,25 +1938,25 @@ http://microformats.org/wiki/hcard#Property_List
 }
 
 .anchored-tree{
-    background: transparent url(img/background-illustrations/Aboutus_Tree.png) repeat-x 0 100%;
+    background: transparent url(img/background-illustrations/Aboutus_Tree.png) repeat-x -200px 100%;
 }
 
 /** FIXED WIDTH */
 .chess-illustration {
-    min-width: 1000px;
+    min-width: 940px;
     background: #fff url(img/background-illustrations/chess-pieces-right.png) no-repeat;
     background-position: 100% 20%;
 
 }
 
 .butterflies-illustration {
-    min-width: 1000px;
+    min-width: 940px;
     background: #fff url(img/illustrations/butterflies-bottom-right.png) no-repeat;
     background-position: 100% 20%;
 }
 
 .butterflies-tall-pattern{
-    min-width: 1000px;
+    min-width: 940px;
     min-height: 600px;
     vertical-align: top;
     margin-bottom: 50px;

@@ -42,7 +42,7 @@ var locations = [
         <?php
 
         function eout($metaKey, $pid){
-            echo(get_post_meta($pid, $metaKey, true));
+            echo(htmlspecialchars(addslashes(get_post_meta($pid, $metaKey, true))));
         };
 
         $args = array( 'post_type' => 'locations', 'posts_per_page' => 1000);

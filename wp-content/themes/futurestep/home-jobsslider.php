@@ -33,6 +33,6 @@
     <a href="#!/carousel/item/next" class="sprite nextprev-small next-small"><span>next</span></a>
 </div>
         </section>
-<a href="http://careers.futurestep.com" class="continue" target="new"><?php echo icl_t('Home', 'See our most recent roles', 'See our most recent roles'); ?><span
-        class="decoration sprite right-arrow-grey"><span>&gt;</span></span></a>
+<a href="http://careers.futurestep.com" class="continue" target="new"><?php echo icl_t('Home', 'See jobs with our clients', 'See jobs with our clients'); ?>
+        <span class="decoration sprite right-arrow-grey"><span>&gt;</span></span></a>
 </div>

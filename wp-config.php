@@ -16,13 +16,13 @@
 
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
-define('DB_NAME', 'futurestep_futurestep');
+        define('DB_NAME', 'fswp-v0001');
 
-/** MySQL database username */
-define('DB_USER', 'eliot');
+        /** MySQL database username */
+        define('DB_USER', 'rinntech_admin');
 
-/** MySQL database password */
-define('DB_PASSWORD', 'P455word');
+        /** MySQL database password */
+        define('DB_PASSWORD', 'P455word');
 
 /** MySQL hostname */
 define('DB_HOST', 'localhost');
@@ -88,3 +88,4 @@ if ( !defined('ABSPATH') )
 
 /** Sets up WordPress vars and included files. */
 require_once(ABSPATH . 'wp-settings.php');
+?>
